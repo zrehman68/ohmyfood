@@ -70,10 +70,30 @@ header {
     margin-left: 20px;
 }
 
-.heart-icon {
-    width: 20px;
-    margin-right: 40px;
-    margin-top: 30px;
+.heart-container {
+position: relative;
+width: 25px;
+top: 5px;
+right: 30px;
+}
+
+.heart-line {
+position: absolute;
+z-index: 2;
+}
+
+.heart-solid {
+position: absolute;
+opacity: 0;
+left: 1px;
+top: 1px;
+width: 90%;
+transition-property: opacity;
+transition-duration: 1s;
+}
+
+.heart-container:hover .heart-solid {
+opacity: 1;
 }
 
 .menu-options1 {
@@ -320,8 +340,8 @@ padding-left: 20px;
     margin-left: 0px;
 }
 
-.heart-icon {
-    margin: 0px;
+.heart-container {
+    left: 0px;
 }
 
 .menu-options1,
