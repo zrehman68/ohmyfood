@@ -1,0 +1,338 @@
+@font-face {
+font-family: 'Shrikhand-Regular';
+src: url('Shrikhand/Shrikhand-Regular.ttf');
+}
+
+@font-face {
+font-family: 'Roboto-Regular';
+src: url('Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+font-family: 'Roboto-light';
+src: url('Roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+font-family: 'Roboto-Bold';
+src: url('Roboto/Roboto-Bold.ttf');
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.ohmyfood-header {
+font-family: Shrikhand-regular;
+font-size: 200%;
+width: 230px;
+margin-bottom: 5px;
+margin-right: 65px;
+margin-top: 10px;
+}
+
+.arrow-icon {
+height: 20px;
+margin-left: 15px;
+margin-top: 5px;
+}
+
+.bastille-image {
+width: 100%;
+object-fit: cover;
+position: relative;
+z-index: 1;
+}
+
+.container {
+background-color: #FAFAFA;
+border-radius: 30px 30px 0px 0px;
+margin-top: -60px;
+padding-bottom: 40px;
+display: flex;
+flex-direction: column;
+position: relative;
+z-index: 2;
+}
+
+.bastille-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.bastille-title {
+font-family: Shrikhand-regular;
+font-size: 170%;
+margin: 0px;
+margin-top: 40px;
+margin-left: 20px;
+}
+
+.heart-icon {
+width: 20px;
+margin-right: 40px;
+margin-top: 30px;
+}
+
+.menu-options1 {
+font-family: roboto-regular;
+color: grey;
+margin-left: 20px;
+width: 80px;
+border-bottom: 2px solid #99E2D0;
+margin-bottom: 10px;
+padding-bottom: 5px;
+margin-top: 50px;
+width: 65px;
+}
+
+.menu-options2 {
+font-family: roboto-regular;
+color: grey;
+margin-left: 20px;
+width: 80px;
+border-bottom: 2px solid #99E2D0;
+margin-bottom: 10px;
+margin-top: 50px;
+padding-bottom: 5px;
+}
+
+.menu-options3 {
+font-family: roboto-regular;
+color: grey;
+margin-left: 20px;
+width: 80px;
+border-bottom: 2px solid #99E2D0;
+margin-bottom: 10px;
+margin-top: 50px;
+padding-bottom: 5px;
+width: 75px;
+}
+
+.food1,
+.food2,
+.food3 {
+background-color: white;
+border-radius: 20px;
+box-shadow: 0px 5px 10px 0px lightgrey;
+margin-left: 20px;
+margin-right: 20px;
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+overflow: hidden;
+}
+
+.price-container {
+display: flex;
+}
+
+.food-heading {
+font-family: roboto-bold;
+font-size: 110%;
+margin: 0px;
+padding-left: 15px;
+padding-top: 15px;
+}
+
+.food-text {
+font-family: roboto-regular;
+color: gray;
+margin: 0px;
+padding-left: 15px;
+padding-top: 5px;
+}
+
+.food-price {
+font-family: roboto-bold;
+padding-top: 40px;
+margin-bottom: 0px;
+margin-top: 0px;
+margin-right: 15px;
+}
+
+.checkmark {
+width: 30px;
+transition: transform 750ms;
+transform: rotate(180deg);
+}
+
+.green-box {
+background-color: #99E2D0;
+padding: 20px;
+border-radius: 0px 20px 20px 0px;
+}
+
+.price-container {
+align-self: flex-end;
+transition-property: transform;
+transition-duration: 500ms;
+transform: translateX(63%);
+}
+
+.food1:hover .price-container .green-box .checkmark {
+transform: rotate(0);
+}
+
+.food1:hover .price-container {
+transform: translateX(0);
+}
+
+.food2:hover .price-container .green-box .checkmark {
+transform: rotate(0);
+}
+
+.food2:hover .price-container {
+transform: translateX(0);
+}
+
+.food3:hover .price-container .green-box .checkmark {
+transform: rotate(0);
+}
+
+.food3:hover .price-container {
+transform: translateX(0);
+}
+
+.order-button {
+background-image: linear-gradient(#FF79DA, #9356DC);
+padding: 20px;
+border-radius: 50px;
+margin-left: 100px;
+margin-right: 100px;
+margin-top: 50px;
+margin-bottom: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.order-button-text {
+font-family: Roboto-Regular;
+font-size: 130%;
+color: white;
+margin: 0px;
+}
+
+footer {
+background-color: #383838;
+padding-bottom: 30px;
+}
+
+.footer-header {
+font-family: Shrikhand-regular;
+font-size: 120%;
+color: white;
+margin: 0px;
+padding: 20px;
+}
+
+.footer-subtext {
+font-family: roboto-regular;
+font-size: 120%;
+color: white;
+margin: 8px;
+margin-left: 10px;
+}
+
+.footer-subtext2 {
+font-family: roboto-regular;
+font-size: 120%;
+color: white;
+margin: 8px;
+margin-left: 20px;
+}
+
+.footer-text {
+display: flex;
+align-items: center;
+}
+
+.footer-icon {
+width: 18px;
+height: 18px;
+padding-left: 20px;
+}
+
+.food1 {
+animation: fadeIn 1s;
+animation-delay: 200ms;
+animation-fill-mode: forwards;
+opacity: 0;
+}
+
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+.food2 {
+animation: fadeIn 1s;
+animation-delay: 500ms;
+animation-fill-mode: forwards;
+opacity: 0;
+}
+
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+.food3 {
+animation: fadeIn 1s;
+animation-delay: 700ms;
+animation-fill-mode: forwards;
+opacity: 0;
+}
+
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+@media screen and (min-width: 500px) {
+
+.ohmyfood-header {
+    font-size: 250%;
+    width: auto;
+    margin: auto;
+}
+
+.container {
+    width: auto;
+    align-items: center;
+}
+
+.food1,
+.food2,
+.food3 {
+    width: 475px;
+}
+
+.bastille-header {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bastille-title {
+    margin-left: 0px;
+}
+
+.heart-icon {
+    margin: 0px;
+}
+
+.menu-options1,
+.menu-options2,
+.menu-options3 {
+    margin-left: 0px;
+}
+
+.order-button {
+width: 214px;
+}
+
+}
